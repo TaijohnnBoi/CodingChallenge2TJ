@@ -4,60 +4,27 @@ class Challenges
 {
     public static void Main(string[] args)
     {
-        // Existing code...
+        Console.Write("HEY BOO! Did I scare you? Anyway, hello hi! Picking numbers is fun! \n");
 
-        // Example call to the new function
-        Console.Write("Enter a number to check if it's less than or equal to zero: ");
-        int numberToCheck = GetValidInteger();
-        bool result = IsLessThanOrEqualToZero(numberToCheck);
-        Console.WriteLine($"Is {numberToCheck} less than or equal to zero? {result}");
+        // Call the Sum function and print the result
+        int result = Sum(1, 5);
+        Console.WriteLine($"The sum of 1 and 5 is: {result}");
 
-        // Continue with the rest of the program...
+        // Convert minutes to seconds
+        int minutes = 5;
+        int seconds = Convert(minutes);
+        Console.WriteLine($"{minutes} minutes is equal to {seconds} seconds.");
     }
 
-    // New function to check if a number is less than or equal to zero
-    public static bool IsLessThanOrEqualToZero(int number)
+    // Function that takes two integers and returns their sum
+    public static int Sum(int a, int b)
     {
-        return number <= 0;
+        return a + b;
     }
 
-    // Existing methods...
-
-    public static (int, int) GetTwoNumbers(string prompt1 = "Enter the first number: ", string prompt2 = "Enter the second number: ")
+    // Function that converts minutes to seconds
+    public static int Convert(int minutes)
     {
-        Console.Write(prompt1);
-        int number1 = GetValidInteger();
-
-        Console.Write(prompt2);
-        int number2 = GetValidInteger();
-
-        return (number1, number2);
+        return minutes * 60;
     }
-
-    public static int GetValidInteger()
-    {
-        while (true)
-        {
-            if (int.TryParse(Console.ReadLine(), out int result))
-            {
-                return result;
-            }
-            else
-            {
-                Console.Write("Invalid input. Please enter a valid integer: ");
-            }
-        }
-    }
-
-    public static int Sum(int number1, int number2) => number1 + number2;
-
-    public static int Convert(int minutes) => minutes * 60;
-
-    public static int PlusOne(int number) => number + 1;
-
-    public static int CircuitPower(int voltage, int current) => voltage * current;
-
-    public static int CalcAge(int ageInYears) => ageInYears * 365;
-
-    public static double TriArea(int baseLength, int height) => (baseLength * height) / 2.0;
 }
