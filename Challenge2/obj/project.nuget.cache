@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "t/7/GiWlDaM=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Per3Student\\Documents\\Visual Studio 2022\\Challenge2\\Challenge2.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Per3Student\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.21.0\\microsoft.visualstudio.azure.containers.tools.targets.1.21.0.nupkg.sha512"
+  ],
+  "logs": []
+}
